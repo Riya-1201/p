@@ -1,7 +1,7 @@
 import subprocess
 
 def ping_host(host):
-    result = subprocess.call("ping " + host, shell=True)
+    result = subprocess.call(["ping", host])
     return result
 
 PASSWORD = "admin1234"
